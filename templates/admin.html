@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinoXP - Admin</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+    <h1>Admin Panel</h1>
+</header>
+
+<section id="admin-controls">
+    <h2>Create a New Showing</h2>
+    <form id="showingForm">
+        <label for="movieName">Movie Name:</label>
+        <input type="text" id="movieName">
+
+        <label for="time">Showtime:</label>
+        <input type="text" id="time" placeholder="YYYY-MM-DD HH:MM">
+
+        <label for="theater">Theater Number:</label>
+        <input type="number" id="theater">
+
+        <button type="submit">Create Showing</button>
+    </form>
+</section>
+
+<script src="../js/admin.js"></script>
+</body>
+</html>
