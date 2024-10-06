@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+</head>
+<body>
+<h1>Reservér Billet</h1>
+<form id="reservation-form">
+    <label for="showingId">Visnings ID:</label>
+    <input type="text" id="showingId" required>
+    <label for="seats">Sæder (komma-separeret):</label>
+    <input type="text" id="seats" required>
+    <label for="customerName">Kundenavn:</label>
+    <input type="text" id="customerName" required>
+    <button type="submit">Reservér Billet</button>
+</form>
+<div id="reservation-message"></div>
+<script src="../js/reservation.js"></script>
+</body>
+</html>

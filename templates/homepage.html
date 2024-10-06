@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinobackend - Filmoversigt</title>
+    <link rel="stylesheet" href="../css/Homepage.css">
+    <!-- Hvis du har en CSS-fil -->
+</head>
+<body>
+<h1>Velkommen til Kinobackend</h1>
+<nav>
+    <ul>
+        <li><a href="customer.html">Kunde</a></li>
+        <li><a href="MovieApp.html">Film Administration</a></li>
+        <li><a href="operator.html">Operatør</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="seat.html">Sæde Reservation</a></li>
+        <li><a href="showing.html">Visninger</a></li>
+    </ul>
+</nav>
+
+<h2>Alle Film</h2>
+<div id="movie-list"></div>
+
+<h2>Log ind som Admin/Operatør</h2>
+<form id="login-form">
+    <label for="username">Brugernavn:</label>
+    <input type="text" id="username" required autocomplete="username">
+    <br>
+    <label for="password">Adgangskode:</label>
+    <input type="password" id="password" required autocomplete="current-password">
+    <br>
+    <button type="submit">Log ind</button>
+</form>
+<button id="show-login-btn">Vis login-formular</button>
+
+<div id="ticketsModal" style="display:none;"> <!-- Eksempel på modal -->
+    <span id="closeTicketsModal">Luk</span>
+    <div id="ticketList"></div>
+</div>
+
+<script src="../js/homepage.js"></script>
+</body>
+</html>

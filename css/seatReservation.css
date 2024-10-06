@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: inline-block;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.reserved {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+.selected {
+    background-color: green;
+
+<style>
+    /* Tilføj nogle grundlæggende stilarter til sædeoversigten */
+.seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: inline-block;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.reserved {
+    background-color: red;
+}
+.selected {
+    background-color: green;
+}
+</style>
+}
