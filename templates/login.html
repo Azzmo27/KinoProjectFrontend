@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Log Ind</title>
 </head>
 <body>
-<header>
-    <h1>Login to KinoXP</h1>
-</header>
-
-<section id="login">
-    <form id="loginForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" required>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" required>
-
-        <button type="submit">Login</button>
-    </form>
-</section>
-
-<script src="../js/login.js"></script>
+<h1>Log Ind</h1>
+<form method="post" action="/login">
+  <div>
+    <label for="username">Brugernavn:</label>
+    <input type="text" id="username" name="username" required>
+  </div>
+  <div>
+    <label for="password">Adgangskode:</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <button type="submit">Log Ind</button>
+</form>
+<p><a href="/">Tilbage til forsiden</a></p>
 </body>
 </html>
